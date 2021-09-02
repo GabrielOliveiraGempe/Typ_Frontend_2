@@ -5,7 +5,31 @@ export const Container = styled.div`
   
   main {
     background-color: #f0f5f0;
-    padding: 32px 0px 0px 240px;
+    padding: 0px 0px 0px 240px;
+
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 64px;
+      
+      .perfil {
+        span {
+          font-size: 18px;
+          font-weight: 400;
+          position: relative;
+          top: 85px;
+          left: -32px
+        }
+        img {
+          width: 120px;
+          margin-right: 128px;
+          
+        }
+      }
+
+    }
 
     h1 {
       color: #24527C;
@@ -17,9 +41,9 @@ export const Container = styled.div`
       flex-wrap: wrap;
       justify-content: space-between;
 
-      .position {
+       .position {
         position: relative;
-        bottom: 280px;
+        bottom: 200px;
       }
 
       .etiqueta-item {
@@ -32,7 +56,7 @@ export const Container = styled.div`
 
         img {
           width: 300px;
-          margin: 0 0px 0px 32px;
+          margin: 0 0px 0px -124px;
         
         }
 

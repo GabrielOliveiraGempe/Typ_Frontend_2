@@ -8,10 +8,11 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import TableSortLabel from '@material-ui/core/TableSortLabel';
-import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
 import MenuLateral from '../../../Components/MenuLateral';
 import { Container } from './style'
+import FeitosaPerfilImg from '../../../Assets/gabriel_perfil.png'
+
 
 function createData(name, calories, fat, carbs, protein) {
   return { name, calories, fat, carbs, protein };
@@ -220,15 +221,13 @@ export default function Boletim() {
     <Container>
       <MenuLateral />
       <div className={classes.root} id="totalTabela">
-        <Typography
-          className={classes.typography}
-          id="typography"
-          variant="h3"
-          component="h3"
-          color="textPrimary"
-        >
-          Boletim
-        </Typography>
+        <header>
+          <h1>Boletim </h1>
+          <div className="perfil">
+            <span>Gabriel Feitosa <br/> <strong>@a2211122</strong></span>
+            <img src={FeitosaPerfilImg}/>
+          </div>
+        </header>
         <div className="etiqueta">
           <span><strong>Aluno: </strong> Gabriel Fernando Sousa de Oliveira </span>
           <span><strong>Turno: </strong>Noite</span>

@@ -7,6 +7,8 @@ export const Container = styled.div`
     padding-left: 240px;
     margin: 5% auto;
     
+
+    
     h1 {
       margin: 0px 0px 48px 0px;
     }

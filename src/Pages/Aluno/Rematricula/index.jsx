@@ -8,11 +8,13 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import TableSortLabel from '@material-ui/core/TableSortLabel';
-import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
 import MenuLateral from '../../../Components/MenuLateral';
 import { Container } from './style'
-import { Button, TextField } from '@material-ui/core';
+import { TextField } from '@material-ui/core';
+import { Button } from '../../../Components/Button/style'
+import ViniciusPerfilImg from '../../../Assets/vinicius_perfil.png'
+
 
 function createData(name, calories, fat, carbs, protein) {
   return { name, calories, fat, carbs, protein };
@@ -167,8 +169,8 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     position: 'relative',
-    top: -72,
-    left: 1110,
+    top: -60,
+    left: 420,
     display: 'inline',
     width: 320,
     padding: 16 ,
@@ -238,15 +240,13 @@ export default function Rematricula() {
     <Container>
       <MenuLateral />
       <div className={classes.root} id="totalTabela">
-        <Typography
-          className={classes.typography}
-          id="typography"
-          variant="h3"
-          component="h3"
-          color="textPrimary"
-        >
-          Rematrícula
-        </Typography>
+      <header>
+        <h1>Rematrícula </h1>
+        <div className="perfil">
+          <span>Gabriel Oliveira <br/> <strong>@a2211122</strong></span>
+          <img src={ViniciusPerfilImg}/>
+        </div>
+      </header>        
         <form className="forms">
           <TextField
             className={classes.input}

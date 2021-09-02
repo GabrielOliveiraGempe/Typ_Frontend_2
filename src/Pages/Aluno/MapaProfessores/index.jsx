@@ -12,6 +12,7 @@ import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
 import MenuLateral from '../../../Components/MenuLateral';
 import { Container } from './style'
+import GohanPerfilImg from '../../../Assets/gohanCalvo.png'
 
 function createData(name, calories, fat, carbs, protein) {
   return { name, calories, fat, carbs, protein };
@@ -211,16 +212,13 @@ export default function MapaProfessores() {
     <Container>
       <MenuLateral />
       <div className={classes.root} id="totalTabela">
-        <Typography
-          className={classes.typography}
-          id="typography"
-          variant="h3"
-          component="h3"
-          color="textPrimary"
-          
-        >
-          Mapa dos Professores
-        </Typography>
+      <header>
+        <h1>Histórico Escolar </h1>
+        <div className="perfil">
+          <span>Gabriel Oliveira <br/> <strong>@a2211122</strong></span>
+          <img src={GohanPerfilImg}/>
+        </div>
+      </header>
         <Paper className={classes.paper}>
           <TableContainer>
             <Table

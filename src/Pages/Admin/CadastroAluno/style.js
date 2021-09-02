@@ -8,6 +8,28 @@ export const Container = styled.div`
     margin: 5% auto;
     padding-left: 240px;
     
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 64px;
+        
+            .perfil {
+                span {
+                font-size: 18px;
+                font-weight: 400;
+                position: relative;
+                top: 85px;
+                left: -96px
+                }
+
+                img {
+                width: 120px;
+                }
+            }
+
+        }
+
     h1 {
       margin: 0px 0px 48px 0px;
     }

@@ -7,7 +7,6 @@ export const Container = styled.div`
     background-color: #f0f5f0;
     padding: 32px 0px 0px 240px;
 
-
     h1 {
       margin: 32px 0px 64px 32px;
       color: #24527C;

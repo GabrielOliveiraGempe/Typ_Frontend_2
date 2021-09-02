@@ -16,10 +16,9 @@ const useStyles = makeStyles({
 export default function Login() {
   const classes = useStyles()
   const history = useHistory()
-  let condicao = false
   const menuLinks = [
     {
-      path: '/admin/cadastro-de-professores'
+      path: '/inicio'
     }
   ]
 

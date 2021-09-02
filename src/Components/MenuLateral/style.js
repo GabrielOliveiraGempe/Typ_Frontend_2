@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.aside`
   color: #fff;
-  width: 180px;
+  width: 120px;
   height: 200vh;
   background-color: #24527C;
   padding: 32px 24px;
@@ -10,13 +10,18 @@ export const Container = styled.aside`
 
   div {
     margin-top: 200px;
+    img {
+      padding: 24px 0px 0px;
+      cursor: pointer;
+    }
   }
 
-  img {
+  .logo {
+    img {
       cursor: pointer;
       display: block;
-      margin: -16px auto;
+      margin: -240px auto;
       margin-bottom: 64px;
     }
-
+  }
 `

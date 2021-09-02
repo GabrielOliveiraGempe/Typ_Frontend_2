@@ -3,6 +3,7 @@ import { TextField, makeStyles } from "@material-ui/core";
 import { Container } from "./style";
 import { Button } from '../../../Components/Button/style'
 import IlustracaoImg from '../../../Assets/ilustracao_aluno.svg'
+import GohanPerfilImg from '../../../Assets/gohanCalvo.png'
 
 const useStyles = makeStyles({
   field: {
